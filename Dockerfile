@@ -11,4 +11,6 @@ RUN adduser -u8080 -D -H www
 
 EXPOSE 9000
 
+VOLUME /www
+
 CMD php-fpm -F -y /etc/php-fpm.conf
