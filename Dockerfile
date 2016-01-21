@@ -9,4 +9,6 @@ COPY php-fpm.conf /etc/php-fpm.conf
 
 RUN adduser -u8080 -D -H www
 
+EXPOSE 9000
+
 CMD php-fpm -F -y /etc/php-fpm.conf
