@@ -7,4 +7,5 @@ usage
 
 ```bash
 docker run treerootboy/mini-php php -v
+docker run treerootboy/mini-php php-fpm -F
 ```
