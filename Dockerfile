@@ -2,7 +2,7 @@ FROM alpine:latest
 
 MAINTAINER LM <treerootboy@gmail.com>
 
-RUN apk add php php-fpm php-mcrypt php-gd php-memcache php-mysql php-openssl php-opcache php-xml php-soap php-pdo \
+RUN apk add --update php php-fpm php-mcrypt php-gd php-memcache php-mysql php-openssl php-opcache php-xml php-soap php-pdo \
     && rm -rf /var/cache/apk/* \
     && adduser -u8080 -D -H www
 
